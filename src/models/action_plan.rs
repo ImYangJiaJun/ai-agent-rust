@@ -10,15 +10,15 @@ pub struct ActionPlan {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, JsonSchema)]
-pub struct ActionStep{
-    pub index:u8,
-    pub description:String,
-    pub tool_hint:Option<String>,
+pub struct ActionStep {
+    pub index: u8,
+    pub description: String,
+    pub tool_hint: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, JsonSchema)]
-pub enum Difficulty{
+pub enum Difficulty {
     Easy,
     Medium,
-    Hard
+    Hard,
 }
